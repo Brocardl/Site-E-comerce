@@ -1,0 +1,521 @@
+@import url('https://fonts.googleapis.com/css?family=Rubik');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik',sans-serif;
+}
+
+body
+{
+    background-color: #F1ECF2;
+}
+
+.wrap
+{
+    max-width: 1920px;
+    margin: auto;
+}
+
+/*----- HEADER -----*/
+header .wrap
+{
+    height: 70px;
+    background-color: #1D3348;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.4);
+}
+
+#logoEtRecherche
+{
+    display: flex;
+    align-items: center;
+}
+
+#logo
+{
+    height: 80px;
+}
+
+#barreRecherche
+{
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+    height: 40px;
+}
+
+#categoriesBarreRecherche,#recherche,#butt
+{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+}
+
+#categoriesBarreRecherche
+{
+    border-radius: 5px 0 0 5px;
+}
+
+#recherche
+{
+    width: 600px;
+    padding-left: 5px;
+}
+
+#butt
+{
+    width: 40px;
+    border-radius: 0 5px 5px 0;
+    background: url("img/loupe_logo.png") center no-repeat;
+    background-size: 50%;
+    background-color: #77F5FF;
+}
+
+#butt:hover
+{
+    background-color: #B7FAFF;
+}
+
+#boutons
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    width: 300px;
+    padding-right: 20px;
+}
+
+#boutons a
+{
+    text-decoration: none;
+}
+
+.connection
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    padding-right: 10px;
+}
+
+.connection:hover
+{
+    background-color: #E4DFE5;
+    color: black;
+}
+
+#shoppingCart
+{
+    padding-right: 20px;
+    display: block;
+    width: 25px;
+    height: 25px;
+    background: url("img/logoCart.png") center no-repeat;
+    background-size: contain;
+}
+
+.connection:hover #shoppingCart
+{
+    background: url("img/logoCartNoir.png") center no-repeat;
+    padding-right: 20px;
+    display: block;
+    width: 25px;
+    height: 25px;
+    background-size: contain;
+}
+
+#login
+{
+    padding-right: 20px;
+    display: block;
+    width: 25px;
+    height: 25px;
+    background: url("img/logoLogin.png") center no-repeat;
+    background-size: contain;
+}
+
+.connection:hover #login
+{
+    background: url("img/logoLoginNoir.png") center no-repeat;
+    padding-right: 20px;
+    display: block;
+    width: 25px;
+    height: 25px;
+    background-size: contain;
+}
+
+
+/*----- NAV -----*/
+nav
+{
+    height: 40px;
+    background-color: rgba(29, 51, 72, 0.9);
+    z-index: 1;
+    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.4);
+    position: relative;
+}
+
+a
+{
+    text-decoration: none;
+    color: white;
+    font-size: 1em;
+}
+
+nav a:hover
+{
+    text-decoration: underline;
+}
+
+#nav1
+{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+
+.navBoite
+{
+    display: block;
+    text-align: center;
+    padding-top: 10px;
+    width: 100%;
+    height: 29px;
+}
+
+#highlighted
+{
+    display: block;
+    color: black;
+    background-color: #E4DFE5;
+    text-align: center;
+    padding-top: 10px;
+    width: 90px;
+    height: 29px;
+}
+
+/*----- SLIDER ET VENTE-FLASH -----*/
+#slider
+{
+    height: 350px;
+    background: url("img/placeholder_slider.jpg") center no-repeat;
+    background-size: cover;
+}
+
+#slider h1
+{
+    height: 350px;
+    background: url("img/placeholder_slider.jpg") center no-repeat;
+    background-size: cover;
+    bottom: 30px;
+    text-align: center;
+    padding-top: 175px;
+    text-transform:uppercase;
+    font-weight: bolder;
+    color: white;
+}
+
+#venteFlash
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 2px 0 7px 2px rgba(0, 0, 0, 0.4);
+    background-color: #F1ECF2;
+    height: 270px;
+    position: relative;
+    z-index: 3;
+}
+
+#venteFlash h3
+{
+    margin-top: 15px;
+}
+
+#trierBoiteFlash
+{
+    margin-bottom: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.venteFlashPromo
+{
+    height: 200px;
+    width: 200px;
+    background-color: white;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.2)
+}
+
+.imageVenteFlash
+{
+    width: 100%;
+    height: 100%;
+    object-fit: contain ;
+    background-color: white;
+}
+
+.compteA_Reboures
+{
+    position: relative;
+    font-style: italic;
+    font-weight: bold;
+    top: -20%;
+    color: black;
+    font-size: 0.9em;
+    background-color: #F1ECF2;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.4);
+}
+
+.highlightCompteA_Rebours
+{
+    margin-left: 15px;
+    padding-left: 5px;
+    padding-right: 7px;
+    background-color: #1D3348;
+    color: white;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.venteFlashPromoApparait
+{
+    display: none;
+    text-align: center;
+    position: relative;
+    top: -60%;
+    color: black;
+    font-weight: bold;
+}
+
+.venteFlashPromo:hover
+{
+    background-color: black;
+    box-shadow: 0 2px 7px black;
+}
+
+.venteFlashPromo:hover .venteFlashPromoApparait
+{
+    display: block;
+}
+
+.venteFlashPromo:hover .imageVenteFlash
+{
+    opacity: 0.90;
+}
+
+/*----- CATEGORIES -----*/
+#categories
+{
+    height: 450px;
+    display: flex;
+    background-color: #1D3348;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#carreCategorie
+{
+    height: 82%;
+    width: 16%;
+}
+
+#illustrationCategories
+{
+    display: block;
+    height: 100%;
+    width: 100%;
+    background: url("img/familyCategorie.jpeg") center;
+    background-size: cover;
+    border: 3px solid white;
+    text-align: center;
+    border-radius: 4px;
+}
+
+#illustrationCategories h3
+{
+    color: white;
+    text-shadow: 0 0 7px rgba(0, 0, 0, 0.4);
+    position: relative;
+    top: 40px;
+    font-size: 1.8em;
+    font-weight: bold;
+    text-decoration: underline black;
+    text-transform: uppercase;
+}
+
+#illustrationCategories h4
+{
+    text-shadow: 0 0 7px rgba(0, 0, 0, 0.7);
+    color: white;
+    position: relative;
+    top: 100px;
+    font-size: 1.2em;
+}
+
+#articleCategories
+{
+    height: 82%;
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 4px;
+}
+
+.boite
+{
+    width: 17%;
+    height: 45%;
+    border: 3px solid white;
+    border-radius: 3%;
+    box-shadow: 0 0 7px black;
+    background-color: white;
+}
+
+.habillageCategories
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-color: white;
+}
+
+.textCategories
+{
+    text-align: center;
+    position: relative;
+    top: -60%;
+    color: white;
+    font-size: 1.1em;
+    font-weight: bold;
+    text-shadow: 0 0 7px black;
+}
+
+.boite:hover .habillageCategories
+{
+    opacity: 0.75;
+}
+
+.boite:hover .textCategories
+{
+    color: black;
+    text-shadow: 0 0 0 black;
+}
+
+/*----- PROMO -----*/
+#promo
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 500px;
+    width: 100%;
+}
+
+.titresSections
+{
+    display: block;
+    background: url("img/familyCategorie.jpeg");
+    width: 70%;
+    text-align: center;
+    padding: 10px;
+    margin-top: 15px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.ranger6Categories
+{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.imageVentePromoProduit
+{
+    width: 100%;
+    height: 100%;
+    object-fit: contain ;
+    background-color: white;
+}
+
+.venteFlashPromo:hover .imageVentePromoProduit
+{
+    opacity: 0.90;
+}
+
+/*----- PREVIEW PRODUITS -----*/
+.produitsDeCategorie
+{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.rangeProduitDeCategorie
+{
+    height: 260px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.boiteCategorie
+{
+    background-color: white;
+    width: 220px;
+    height: 220px;
+    box-shadow: 0 2px 7px black;
+}
+
+.meilleurVente
+{
+    box-shadow: 0 0 0 black;
+    padding: 5px;
+    border: 3px solid #2B6284;
+    border-radius: 2%;
+}
+
+.boiteCategorie:hover .venteFlashPromoApparait
+{
+    display: block;
+}
+
+.boiteCategorie:hover .imageVentePromoProduit
+{
+    opacity: 0.5;
+}
+
+footer
+{
+    height: 200px;
+    background-color: #1B1B1B;
+}
+
+@media screen and (max-width: 1250px) {
+    
+}
